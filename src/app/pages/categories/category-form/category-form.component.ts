@@ -71,8 +71,8 @@ export class CategoryFormComponent implements OnInit, AfterContentChecked {
         switchMap(params => this.categoryService.getById(+params.get("id")))
       )
       .subscribe(
-        (catogory) => {
-          this.category = this.category
+        (category) => {
+          this.category = category
           this.categoryForm.patchValue(this.category) //binds loaded category data to categoryForm
         },
         (error) => alert('Ocorreu um erro no servidor, tente mais tarde')
@@ -101,7 +101,14 @@ export class CategoryFormComponent implements OnInit, AfterContentChecked {
   }
 
   private updateCategory(){
+    const category: Category = Object.assign(new Category(), this.categoryForm.value)
 
+    this.categoryService.update(category)
+    .subscribe(
+      category => this.actionsForSuccess(category),
+      error => this.actionsForError(error)
+    )
+    
   }
 
   private actionsForSuccess(category: Category){
