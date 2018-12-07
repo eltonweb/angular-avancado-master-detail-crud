@@ -1,0 +1,53 @@
+﻿Prefixos criação de Projetos
+--routing    : criar arquivo de rotas
+--skip-tests : não criar arquivo de testes ao criar novos componentes
+
+Comandos Linux
+LL    : listar pastas
+Clear : limpar terminal
+cod . : Abrir visual studio code
+
+
+Instalar dependências
+Bootstrap                            = npm i bootstrap jquery --save
+IMask Plugin – mascara de campos     = npm i angular-imask --save
+Currency Formatter – formatar moedas = npm i currency-formatter --save
+Moment.js – Formatar datas 			 = npm install moment --save
+Toastr – Caixa de mensagens 		 = npm i toastr --save
+PrimeNG – Componentes prontos
+		 npm install primeng --save
+		 npm install primeicons --save
+Charts – npm install chart.js --save
+In Memory Web API – Emular um backend = npm i angular-in-memory-web-api --save
+
+Adicionar bootstrap no projeto
+angular.json -> architect -> styles : adicionar bootstrap.min.css (node_modules, está sempre na pasta dist)
+angular.json -> architect -> scripts: jquery/dist/jquery.min.js (node_modules)
+angular.json -> architect -> scripts: adicionar bootstrap.min.js (node_modules, está sempre na pasta dist)
+
+Adicionar demais componentes
+STYLES
+"node_modules/toastr/build/toastr.min.css",
+"node_modules/primeicons/primeicons.css",
+"node_modules/primeng/resources/themes/nova-light/theme.css",
+"node_modules/primeng/resources/primeng.min.css"
+
+SCRIPTS
+"node_modules/chart.js/dist/Chart.bundle.js"
+
+GIT HUB
+- git status 			: mostra os objetos não salvos
+- git log    			: historico mudancas
+- git add .  			: salva as mudancas feitas
+- git commit -m "teste" : comita alterações
+- git remote add origin https://github.com/eltonweb/angular-avancado-master-detail-crud.git :  vincula projeto ao diretorio remoto
+- git push -u origin master : envia para o repositorio
+- git checkout -b nome-da-branch : cria uma nova branch no git
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+CRIAR UM MODULO
+ng g m pages/categories --routing
+
+CRIAR UM COMPONENTE
+ng g c pages/categories/category-list
