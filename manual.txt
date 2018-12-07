@@ -51,3 +51,6 @@ ng g m pages/categories --routing
 
 CRIAR UM COMPONENTE
 ng g c pages/categories/category-list
+
+VISUAL STUDIO CODE
+Identar : Ctrl + K, Ctrl + F
