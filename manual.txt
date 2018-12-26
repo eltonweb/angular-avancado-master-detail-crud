@@ -1,11 +1,12 @@
 ﻿Prefixos criação de Projetos
 --routing    : criar arquivo de rotas
 --skip-tests : não criar arquivo de testes ao criar novos componentes
+--prefix=blabla : prefixo dos componentes
 
 Comandos Linux
 LL    : listar pastas
 Clear : limpar terminal
-cod . : Abrir visual studio code
+code . : Abrir visual studio code
 
 
 Instalar dependências
