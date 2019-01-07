@@ -53,5 +53,7 @@ ng g m pages/categories --routing
 CRIAR UM COMPONENTE
 ng g c pages/categories/category-list
 
+--inline-template = Cria o componente sem o arquivo html, o template estará diratamente no arquivo .ts.
+
 VISUAL STUDIO CODE
 Identar : Ctrl + K, Ctrl + F
